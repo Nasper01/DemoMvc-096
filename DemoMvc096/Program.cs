@@ -27,3 +27,8 @@ app.MapControllerRoute(
 
 
 app.Run();
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Demo}/{action=ViewExample}/{id?}");
+
